@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M's Personalizados</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png.jpg" alt="Logo M's Personalizados" class="logo">
+
+   <nav>
+    <a href="#inicio">Início</a>
+    <a href="#modelos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Fazer Pedido</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Transformando ideias em canecas inesquecíveis</h1>
+
+    <p>Feitas com amor para criar lembranças que ficam.</p>
+
+   <a href="#contato" class="botao-orcamento">
+    Faça seu Pedido
+</a>
+</section>
+<section class="produtos" id="modelos">
+
+    <h2>Nossos Produtos</h2>
+
+    <div class="produtos-container">
+
+        <div class="produto">
+            <h3>☕ Canecas Personalizadas</h3>
+
+            <p>
+                Personalize sua caneca com fotos, frases, nomes ou qualquer arte especial.
+                Ideal para presentes, empresas e momentos inesquecíveis.
+            </p>
+
+            <a href="#contato" class="botao-modelo">
+                Fazer Pedido
+            </a>
+        </div>
+
+        <div class="produto">
+            <h3>👕 Blusas Personalizadas</h3>
+
+            <p>
+                Em breve você também poderá personalizar blusas com a qualidade da
+                M's Personalizados.
+            </p>
+
+            <button disabled class="botao-em-breve">
+                Em breve
+            </button>
+        </div>
+
+    </div>
+
+</section>
+<section class="sobre" id="sobre">
+    <h2>Sobre a M's Personalizados</h2>
+
+    <p>
+        Na M's Personalizados, cada detalhe é preparado com carinho
+        para transformar momentos especiais em lembranças inesquecíveis.
+        Criamos produtos personalizados pensando em você e nas pessoas
+        que fazem parte da sua história.
+    </p>
+
+   <p>
+    Nosso objetivo é oferecer produtos feitos com amor, criatividade
+    e dedicação, tornando cada presente ainda mais especial.
+</p>
+
+</section>
+
+
+</section>
+
+<section class="contato" id="contato">
+    <h2>Faça seu Pedido</h2>
+
+    <p>
+Leva menos de 1 minuto para preencher.
+Assim que você clicar em <strong>Enviar Pedido</strong>, seu pedido será enviado diretamente para nosso WhatsApp.
+</p>
+
+    <form id="formPedido">
+
+        <input type="text" id="nome" placeholder="Seu nome" required>
+
+        <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+
+        <input type="email" id="email" placeholder="E-mail (opcional)">
+
+        <select id="produto">
+
+            <option>Caneca Personalizada</option>
+
+            <option>Blusa Personalizada (em breve)</option>
+
+        </select>
+
+        <textarea id="arte" placeholder="Como você imagina a arte?"></textarea>
+
+        <textarea id="frase" placeholder="Qual frase deseja colocar?"></textarea>
+
+        <input type="number" id="quantidade" placeholder="Quantidade" min="1">
+
+        <textarea id="observacoes" placeholder="Observações"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
+
+</section>
+    <footer>
+
+    <p><strong>M's Personalizados</strong></p>
+
+    <p>Canecas personalizadas feitas com carinho.</p>
+
+    <p>© 2026 - Todos os direitos reservados.</p>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
