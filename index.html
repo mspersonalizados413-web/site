@@ -52,17 +52,17 @@
         </div>
 
         <div class="produto">
-            <h3>👕 Blusas Personalizadas</h3>
+    <h3>👕 Blusas Personalizadas</h3>
 
-            <p>
-                Em breve você também poderá personalizar blusas com a qualidade da
-                M's Personalizados.
-            </p>
+    <p>
+        Personalize suas blusas com nomes, frases, fotos ou artes especiais.
+        Escolha o tamanho, a cor e a personalização que deseja.
+    </p>
 
-            <button disabled class="botao-em-breve">
-                Em breve
-            </button>
-        </div>
+    <a href="#contato" class="botao-modelo">
+        Fazer Pedido
+    </a>
+</div>
 
     </div>
 
@@ -104,12 +104,36 @@ Assim que você clicar em <strong>Enviar Pedido</strong>, seu pedido será envia
         <input type="email" id="email" placeholder="E-mail (opcional)">
 
         <select id="produto">
+    <option>Caneca Personalizada</option>
+    <option>Blusa Personalizada</option>
+</select>
+<div id="opcoesBlusa" style="display: none;">
 
-            <option>Caneca Personalizada</option>
+    <select id="tamanho">
+        <option value="">Selecione o tamanho</option>
+        <option>P</option>
+        <option>M</option>
+        <option>G</option>
+        <option>GG</option>
+    </select>
 
-            <option>Blusa Personalizada (em breve)</option>
+    <select id="corBlusa">
+        <option value="">Selecione a cor da blusa</option>
+        <option>Branca</option>
+        <option>Preta</option>
+        <option>Vermelha</option>
+        <option>Azul</option>
+        <option>Outra</option>
+    </select>
 
-        </select>
+    <select id="localEstampa">
+        <option value="">Onde deseja a estampa?</option>
+        <option>Frente</option>
+        <option>Costas</option>
+        <option>Frente e costas</option>
+    </select>
+
+</div>
 
         <textarea id="arte" placeholder="Como você imagina a arte?"></textarea>
 

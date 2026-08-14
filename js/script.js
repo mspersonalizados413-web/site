@@ -1,3 +1,17 @@
+const produtoSelect = document.getElementById("produto");
+const opcoesBlusa = document.getElementById("opcoesBlusa");
+
+produtoSelect.addEventListener("change", function () {
+
+    if (produtoSelect.value === "Blusa Personalizada") {
+        opcoesBlusa.style.display = "block";
+    } else {
+        opcoesBlusa.style.display = "none";
+    }
+
+});
+
+
 const formulario = document.getElementById("formPedido");
 
 formulario.addEventListener("submit", function (event) {
@@ -13,6 +27,25 @@ formulario.addEventListener("submit", function (event) {
     const quantidade = document.getElementById("quantidade").value;
     const observacoes = document.getElementById("observacoes").value;
 
+    const tamanho = document.getElementById("tamanho").value;
+    const corBlusa = document.getElementById("corBlusa").value;
+    const localEstampa = document.getElementById("localEstampa").value;
+
+    let detalhesBlusa = "";
+
+    if (produto === "Blusa Personalizada") {
+
+        detalhesBlusa =
+`👕 Tamanho: ${tamanho}
+
+🎨 Cor da blusa: ${corBlusa}
+
+📍 Local da estampa: ${localEstampa}
+
+`;
+
+    }
+
     const mensagem =
 `*NOVO PEDIDO - M's Personalizados*
 
@@ -22,9 +55,9 @@ formulario.addEventListener("submit", function (event) {
 
 📧 E-mail: ${email}
 
-☕ Produto: ${produto}
+🛍️ Produto: ${produto}
 
-🎨 Arte:
+${detalhesBlusa}🎨 Arte:
 ${arte}
 
 ✍️ Frase:
